@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 输入框白色圆角背景 -->
+    
+    <solid android:color="@color/white" />
+
+    <stroke
+        android:width="@dimen/pix_1"
+        android:color="@color/grey82" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/gap_3"
+        android:bottomRightRadius="@dimen/gap_3"
+        android:topLeftRadius="@dimen/gap_3"
+        android:topRightRadius="@dimen/gap_3" />
+	
+</shape>

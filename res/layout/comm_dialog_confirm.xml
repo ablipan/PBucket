@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/comm_round_coner_white_bg"
+    android:layout_margin="@dimen/gap_20"
+    android:paddingBottom="@dimen/gap_5"
+    >
+
+    <!-- 提问类型dialog -->
+    
+    <!-- 标题 -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+    	android:id="@+id/dialogTitle"
+    	android:textColor="@color/text_black"
+    	android:textSize="@dimen/text_size_elarge"
+    	android:layout_marginLeft="@dimen/gap_20"
+    	android:layout_marginRight="@dimen/gap_20"
+    	android:layout_marginTop="@dimen/gap_20"
+    	android:layout_marginBottom="@dimen/gap_20"
+    	android:textStyle="bold"
+    	android:text="@string/dialog_def_title"
+        />
+    
+    <!-- 提示内容 -->
+    <LinearLayout 
+    	android:id="@+id/dialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+    	android:layout_marginLeft="@dimen/gap_20"
+    	android:layout_marginRight="@dimen/gap_20"
+    	android:layout_marginBottom="@dimen/gap_20"
+        />
+    
+    <!-- 按钮组 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:orientation="horizontal"
+    	android:layout_weight="1"
+        >
+	    <!-- 取消按钮 -->
+	    <Button
+	        style="@style/comm_grey_btn_style"
+	        android:id="@+id/dialog_cancel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:text="@string/dialog_cancel" 
+        	android:layout_marginLeft="@dimen/gap_5"
+        	android:layout_marginRight="@dimen/gap_2"
+        	android:gravity="center"
+	        />
+	    
+	    <!-- 确认按钮 -->
+	    <Button
+	        style="@style/comm_red_btn_style"
+	        android:id="@+id/dialog_confirm"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:text="@string/dialog_confirm" 
+        	android:layout_marginLeft="@dimen/gap_2"
+        	android:layout_marginRight="@dimen/gap_5"
+        	android:gravity="center"
+	        />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">PBucket</string>
+    
+    <string name="loading_text">加载中...</string>
+    <string name="exit">退出</string>
+    <string name="settings">设置</string>
+    <string name="network_disable">手机网络不可用</string>
+
+    <!-- 弹出框 -->
+    <string name="dialog_def_title">提示</string><!-- 弹出框默认提示信息 -->
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+        
+
+    
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General dimensions -->
+    <dimen name="toast_hover">64dp</dimen>
+    <dimen name="buttontoast_hover">24dp</dimen>
+    <dimen name="buttontoast_x_padding">12dp</dimen>
+    <dimen name="cardtoast_margin">4dp</dimen>
+
+    <!-- 按钮高度 -->
+    <dimen name="btn_height">@dimen/gap_45</dimen>
+    <!-- 文字按钮高度 -->
+    <dimen name="text_btn_height">@dimen/gap_35</dimen>
+
+    <!-- 普通文本高度 -->
+    <dimen name="text_view_height">@dimen/gap_45</dimen>
+
+    <!-- 导航高度 -->
+    <dimen name="navi_height">@dimen/gap_48</dimen>
+
+    <!-- 输入框高度 -->
+    <dimen name="input_height">@dimen/gap_50</dimen>
+    <!-- 输入框小图标与文本的间距 -->
+    <dimen name="input_padding">@dimen/gap_5</dimen>
+    <!-- 输入框/按钮 左右间距 -->
+    <dimen name="comm_margin">@dimen/gap_10</dimen>
+    <!-- 自动补全提示框高度 -->
+    <dimen name="comm_auto_complete_height">@dimen/gap_100</dimen>
+
+    <!-- 字体设置 -->
+    <dimen name="text_size_esmallest">12sp</dimen>
+    <dimen name="text_size_esmall">14sp</dimen>
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_elarge">24sp</dimen>
+    <dimen name="text_size_huge">40sp</dimen>
+
+    <!-- 距离设置 -->
+    <!-- px -->
+    <dimen name="pix_1">1px</dimen>
+    <dimen name="pix_2">2px</dimen>
+    <dimen name="pix_3">3px</dimen>
+    <dimen name="pix_4">4px</dimen>
+    <!-- dp -->
+    <dimen name="gap_0">0dp</dimen>
+    <dimen name="gap_1">1dp</dimen>
+    <dimen name="gap_2">2dp</dimen>
+    <dimen name="gap_3">3dp</dimen>
+    <dimen name="gap_4">4dp</dimen>
+    <dimen name="gap_5">5dp</dimen>
+    <dimen name="gap_6">6dp</dimen>
+    <dimen name="gap_7">7dp</dimen>
+    <dimen name="gap_8">8dp</dimen>
+    <dimen name="gap_9">9dp</dimen>
+    <dimen name="gap_10">10dp</dimen>
+    <dimen name="gap_11">11dp</dimen>
+    <dimen name="gap_12">12dp</dimen>
+    <dimen name="gap_13">13dp</dimen>
+    <dimen name="gap_14">14dp</dimen>
+    <dimen name="gap_15">15dp</dimen>
+    <dimen name="gap_16">16dp</dimen>
+    <dimen name="gap_17">17dp</dimen>
+    <dimen name="gap_18">18dp</dimen>
+    <dimen name="gap_19">19dp</dimen>
+    <dimen name="gap_20">20dp</dimen>
+    <dimen name="gap_25">25dp</dimen>
+    <dimen name="gap_28">28dp</dimen>
+    <dimen name="gap_30">30dp</dimen>
+    <dimen name="gap_32">32dp</dimen>
+    <dimen name="gap_35">35dp</dimen>
+    <dimen name="gap_36">36dp</dimen>
+    <dimen name="gap_40">40dp</dimen>
+    <dimen name="gap_45">45dp</dimen>
+    <dimen name="gap_48">48dp</dimen>
+    <dimen name="gap_50">50dp</dimen>
+    <dimen name="gap_55">55dp</dimen>
+    <dimen name="gap_60">60dp</dimen>
+    <dimen name="gap_64">64dp</dimen>
+    <dimen name="gap_65">65dp</dimen>
+    <dimen name="gap_70">70dp</dimen>
+    <dimen name="gap_75">75dp</dimen>
+    <dimen name="gap_80">80dp</dimen>
+    <dimen name="gap_85">85dp</dimen>
+    <dimen name="gap_90">90dp</dimen>
+    <dimen name="gap_100">100dp</dimen>
+    <dimen name="gap_110">110dp</dimen>
+    <dimen name="gap_120">120dp</dimen>
+    <dimen name="gap_130">130dp</dimen>
+    <dimen name="gap_135">135dp</dimen>
+    <dimen name="gap_140">140dp</dimen>
+    <dimen name="gap_150">150dp</dimen>
+    <dimen name="gap_170">170dp</dimen>
+    <dimen name="gap_180">180dp</dimen>
+    <dimen name="gap_190">190dp</dimen>
+    <dimen name="gap_200">200dp</dimen>
+    <dimen name="gap_210">210dp</dimen>
+    <dimen name="gap_250">250dp</dimen>
+    <dimen name="gap_300">300dp</dimen>
+    <dimen name="gap_320">320dp</dimen>
+    <dimen name="gap_360">360dp</dimen>
+
+</resources>

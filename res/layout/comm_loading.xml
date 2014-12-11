@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/gap_50"
+    android:layout_width="wrap_content"
+    android:gravity="center" 
+    android:background="@drawable/comm_round_coner_white_bg"
+    android:orientation="horizontal"
+    >
+
+    <!-- loading图片 -->
+    <ImageView 
+        android:id="@+id/loading_circle"
+        android:layout_width="@dimen/gap_18"
+        android:layout_height="@dimen/gap_18"
+        android:contentDescription="@null"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/gap_10"
+        android:src="@drawable/comm_loading_circle"
+        />
+    
+    <!-- loading文字 -->
+    <TextView 
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/gap_10"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/DodgerBlue1"
+        />
+    
+    <!-- 加载文本与取消按钮分隔线 -->
+    <View 
+        android:id="@+id/loading_separate_line"
+        android:layout_width="@dimen/pix_1"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/gap_1"
+        android:background="@color/DodgerBlue1"
+        />
+    
+    <!-- 加大按钮触发区域...套一层view -->
+    <LinearLayout 
+       	android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loading_cancel_view"
+        >
+	    <!-- 取消加载按钮 -->
+		<ImageButton
+	        android:id="@+id/loading_cancel"
+	        android:layout_width="@dimen/gap_18"
+	        android:layout_height="@dimen/gap_18"
+	        android:layout_gravity="center"
+		    android:contentDescription="@null"
+		    android:background="@drawable/comm_loading_cancel"
+		    android:layout_margin="@dimen/gap_12"
+		    />
+	</LinearLayout>
+</LinearLayout>

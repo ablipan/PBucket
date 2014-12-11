@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="DefaultText">
+        <item name="android:text">Default</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="DefaultRootLayout">
+        <item name="android:background">@drawable/background_standard_gray</item>
+    </style>
+
+    <!-- Styles for BUTTON type SuperActivityToasts -->
+
+    <style name="SuperActivityToast_Button_RootLayout" parent="DefaultRootLayout">
+        <item name="android:layout_marginBottom">@dimen/buttontoast_hover</item>
+        <item name="android:layout_marginLeft">@dimen/buttontoast_x_padding</item>
+        <item name="android:layout_marginRight">@dimen/buttontoast_x_padding</item>
+    </style>
+
+    <style name="SuperActivityToast_Button_TextView" parent="DefaultText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <style name="SuperActivityToast_Button_Divider">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="SuperActivityToast_Button_Button">
+        <item name="android:background">@drawable/selector_undobutton</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <!-- Styles for PROGRESS type SuperActivityToasts -->
+
+    <style name="SuperActivityToast_Progress_ProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="SuperActivityToast_Progress_TextView" parent="DefaultText">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Styles for PROGRESS_HORIZONTAL type SuperActivityToasts -->
+
+    <style name="SuperActivityToast_ProgressHorizontal_RootLayout" parent="DefaultRootLayout">
+        <item name="android:minWidth">128dp</item>
+    </style>
+
+    <style name="SuperActivityToast_ProgressHorizontal_TextView" parent="DefaultText">
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="SuperActivityToast_ProgressHorizontal_ProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <!-- Styles for BUTTON type SuperCardToasts -->
+
+    <style name="SuperCardToast_Button_RootLayout" parent="DefaultRootLayout">
+        <item name="android:background">@drawable/selector_undobutton</item>
+    </style>
+
+    <!-- 基本样式 -->
+    <style name="AppBaseTheme" parent="@style/Theme.Sherlock.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:dropDownListViewStyle">@style/widget_dropdownlistview</item>
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/AppBaseTheme.ActionBarStyle</item>
+        <item name="actionBarStyle">@style/AppBaseTheme.ActionBarStyle</item>
+    </style>
+
+    <style name="AppBaseTheme.ActionBarStyle" parent="Widget.Sherlock.Light.ActionBar">
+        <item name="android:titleTextStyle" tools:ignore="NewApi">@style/AppBaseTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/AppBaseTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="AppBaseTheme.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <!-- 打开activity左右动画 -->
+    <style name="AppContentAnim" parent="@style/AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/contentAnimation</item>
+    </style>
+
+    <!-- 打开activity无动画 -->
+    <style name="AppNoAnim" parent="@style/AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+    </style>
+
+    <!-- 普通Activity的动画样式-无动画 -->
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <!-- 从右往左弹出；从左往右消失 -->
+    <style name="contentAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_null</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_null</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 透明背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 无边框输入框样式 -->
+    <style name="comm_input_base_style">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textColorHint">@color/grey70</item>
+        <item name="android:paddingLeft">@dimen/input_padding</item>
+        <item name="android:paddingRight">@dimen/input_padding</item>
+        <item name="android:drawablePadding">@dimen/input_padding</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/input_height</item>
+    </style>
+
+    <!-- 带边框输入框样式 -->
+    <style name="comm_input_style" parent="@style/comm_input_base_style">
+        <item name="android:background">@drawable/comm_input_bg</item>
+    </style>
+
+    <!-- 自动补全输入框样式 -->
+    <style name="comm_auto_complete_style" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textColorHint">@color/grey70</item>
+        <item name="android:paddingLeft">@dimen/input_padding</item>
+        <item name="android:paddingRight">@dimen/input_padding</item>
+        <item name="android:layout_marginLeft">@dimen/comm_margin</item>
+        <item name="android:layout_marginRight">@dimen/comm_margin</item>
+        <item name="android:drawablePadding">@dimen/input_padding</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/gap_50</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:popupBackground">@drawable/comm_popup_bg</item>
+        <item name="android:dropDownVerticalOffset">@dimen/gap_5</item>
+        <item name="android:dropDownHeight">wrap_content</item>
+    </style>
+
+    <!-- 下拉ListView样式 -->
+    <style name="widget_dropdownlistview" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:fadeDuration">0</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <!-- <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item> -->
+        <!-- <item name="android:scrollbarTrackVertical">@color/transparent</item> -->
+        <item name="android:dividerHeight">@dimen/pix_1</item>
+        <item name="android:divider">@color/white</item>
+        <item name="android:background">@color/grey80</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="comm_btn_style">
+        <item name="android:textSize">@dimen/text_size_esmall</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+    </style>
+    <!-- 灰色按钮 -->
+    <style name="comm_grey_btn_style" parent="comm_btn_style">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:background">@drawable/comm_button_grey</item>
+    </style>
+    <!-- 白色按钮 -->
+    <style name="comm_white_btn_style" parent="comm_btn_style">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:background">@drawable/comm_button_white</item>
+    </style>
+    <!-- 橙色按钮 -->
+    <style name="comm_orange_btn_style" parent="comm_btn_style">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:background">@drawable/comm_button_orange</item>
+    </style>
+    <!-- 红色按钮 -->
+    <style name="comm_red_btn_style" parent="comm_btn_style">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:background">@drawable/comm_button_red</item>
+    </style>
+
+    <!-- 文本样式 -->
+    <!-- 次要提示文本样式 -->
+    <style name="comm_hint_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <!-- 普通文本样式 -->
+    <style name="comm_normal_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <!-- 普通文本样式-居中 -->
+    <style name="comm_normal_text_center" parent="comm_normal_text">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!-- 普通文本样式-左侧 -->
+    <style name="comm_normal_text_left" parent="comm_normal_text">
+        <item name="android:layout_marginLeft">@dimen/comm_margin</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    <!-- 普通文本样式-右侧 -->
+    <style name="comm_normal_text_right" parent="comm_normal_text">
+        <item name="android:layout_marginRight">@dimen/comm_margin</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:textColor">@color/text_green</item>
+    </style>
+    <!-- 蓝色连接文字样式 -->
+    <style name="comm_text_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/text_btn_height</item>
+        <item name="android:onClick">BtnClick</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/text_blue</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_margin">@dimen/comm_margin</item>
+    </style>
+
+    <!-- 普通Listview样式 -->
+    <style name="comm_listview">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarFadeDuration">0</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@drawable/grey_bg</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+    </style>
+
+    <!-- SwipeBackLayout -->
+    <style name="SwipeBackLayout">
+        <item name="edge_size">@dimen/gap_50</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <!-- 宽高样式 -->
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Checkbox样式 -->
+    <style name="Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox"></style>
+
+</resources>

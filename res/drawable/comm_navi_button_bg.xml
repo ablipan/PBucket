@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<item android:state_pressed="true">
+	    <shape>
+		    <solid android:color="@color/navi_bt_normal"/>
+<!-- 		    <stroke android:width="@dimen/pix_1" android:color="@color/white"/> -->
+		    <padding
+		        android:left="@dimen/gap_5"
+		        android:right="@dimen/gap_5"
+		        android:top="@dimen/gap_5"
+		        android:bottom="@dimen/gap_5"
+		        />
+		    <corners android:radius="@dimen/gap_2"/>
+	    </shape>
+	</item>
+	
+	<item >
+		<shape>
+		    <solid android:color="@color/navi_bt_pressed"/>
+<!-- 		    <stroke android:width="@dimen/pix_1" android:color="@color/white"/> -->
+		    <padding
+		        android:left="@dimen/gap_5"
+		        android:right="@dimen/gap_5"
+		        android:top="@dimen/gap_5"
+		        android:bottom="@dimen/gap_5"
+		        />
+		    <corners android:radius="@dimen/gap_2"/>
+		</shape>	    
+	</item>
+    
+</selector>

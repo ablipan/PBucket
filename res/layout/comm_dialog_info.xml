@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/comm_round_coner_white_bg"
+    android:layout_margin="@dimen/gap_20">
+
+    <!-- 提问类型dialog -->
+    
+    <!-- 标题 -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+    	android:id="@+id/dialogTitle"
+    	android:textColor="@color/text_black"
+    	android:textSize="@dimen/text_size_elarge"
+    	android:layout_margin="@dimen/gap_20"
+    	android:textStyle="bold"
+    	android:text="@string/dialog_def_title"
+        />
+    
+    <!-- 提示内容 -->
+    <LinearLayout 
+    	android:id="@+id/dialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+    	android:layout_marginLeft="@dimen/gap_20"
+    	android:layout_marginRight="@dimen/gap_20"
+        />
+    
+    <!-- 确认按钮 -->
+    <Button
+        style="@style/comm_red_btn_style"
+        android:layout_marginBottom="@dimen/gap_5"
+        android:layout_marginLeft="@dimen/gap_5"
+        android:layout_marginRight="@dimen/gap_5"
+        android:id="@+id/dialog_confirm"
+        android:text="@string/dialog_confirm" 
+        />
+</LinearLayout>

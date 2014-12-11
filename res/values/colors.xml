@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- base -->
+    <color name="transparent">#00000000</color>
+    
+    <!-- 文字 -->
+    <color name="text_white">@color/white</color>
+    <color name="text_black">@color/grey10</color>
+    <color name="text_blue">@color/DodgerBlue</color>
+    <color name="text_grey">@color/grey40</color>
+    <color name="text_green">#11b500</color>
+    <color name="text_red">#E43B3B</color>
+    
+    <!-- 导航栏 -->
+    <color name="navi_bt_normal">#00a8ff</color>
+    <color name="navi_bt_pressed">#00a8ff</color>
+    <color name="navi_bg">#00a8ff</color>
+    
+    <color name="dark_gray">#333333</color>
+    <color name="light_gray">#AFFFFFFF</color>
+    <color name="grey82">#D1D1D1</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="grey10">#1A1A1A</color>
+    <color name="DodgerBlue1">#1E90FF</color>
+    <color name="DodgerBlue3">#1874CD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey40">#666666</color>
+    <color name="grey60">#999999</color>
+    <color name="grey70">#B3B3B3</color>
+    <color name="grey80">#CCCCCC</color>
+    <color name="grey95">#F2F2F2</color>
+    <color name="DodgerBlue">#1E90FF</color>
+    <color name="CornflowerBlue">#6495ED</color>
+    <color name="DeepSkyBlue1">#00BFFF</color>
+    <color name="SkyBlue1">#87CEFF</color>
+</resources>

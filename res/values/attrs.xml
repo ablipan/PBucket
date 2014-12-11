@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <!-- 带清除按钮输入框样式 -->
+    <declare-styleable name="ClearEditText">
+        <attr name="has_bottom_border" format="boolean" /><!-- 是否需要底部线条-->
+        <attr name="is_number" format="boolean" /><!-- 是否只能输入数字-->
+        <attr name="not_null" format="boolean"></attr><!-- 是否可以为空 -->
+        <attr name="null_hint" format="string"></attr><!-- 为空提示关键字配合 strings.xml的 <string name="is_empty">请输入%1$s!</string>-->
+    </declare-styleable>
+    
+    <!-- 导航栏属性 -->
+    <declare-styleable name="CommNavigation">
+        <attr name="nav_title_text" format="string" /><!-- nav title text-->
+        <attr name="nav_right_text" format="string" /><!-- right button Text -->
+        <attr name="nav_right_drawable" format="reference" /><!-- right button drawable -->
+        <attr name="nav_has_left_btn" format="boolean" /><!-- have left button ?-->
+        <attr name="nav_has_right_btn" format="boolean" /><!-- have right button ?-->
+        <attr name="nav_OnLeftClick" format="string" /><!-- left button OnClickListener-->
+        <attr name="nav_OnRightClick" format="string" /><!-- right button OnClickListener-->
+    </declare-styleable>
+    
+     <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+</resources>
