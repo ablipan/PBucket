@@ -61,7 +61,7 @@ public class CommNavigation extends RelativeLayout
     private RelativeLayout btnLeftLayout; //左边按钮背景————为了扩大按钮的触发区域
     private int btnLeftLayoutWidth; //左边按钮背景宽度
     
-    private Button btnRight; //右边按钮
+    private TextView btnRight; //右边按钮
     private RelativeLayout btnRightLayout; //右边按钮背景————为了扩大按钮的触发区域
     private int btnRightLayoutWidth; //右边按钮背景宽度
     
@@ -155,13 +155,13 @@ public class CommNavigation extends RelativeLayout
             btnLeft.setLayoutParams(btnLeftParams);
             btnLeft.setBackgroundDrawable(backDrawable);
             btnLeft.setVisibility(View.VISIBLE);
-            btnLeft.setId(R.id.navi_left_button);
+            btnLeft.setId(R.id.navi_btn_left);
             
             //给按钮的背景添加点击事件
             btnLeftLayout.setOnClickListener(leftClickListener);
             btnLeft.setOnClickListener(leftClickListener);
             btnLeftLayout.addView(btnLeft);
-            btnLeftLayout.setId(R.id.navi_left_button_layout);
+            btnLeftLayout.setId(R.id.navi_btn_left_layout);
             addView(btnLeftLayout);
             
             //添加按钮touch透明事件
@@ -193,7 +193,7 @@ public class CommNavigation extends RelativeLayout
             btnRightLayout.setLayoutParams(btnRightLayoutParams);
             btnRightLayout.setGravity(Gravity.RIGHT + Gravity.CENTER_VERTICAL);
             
-            btnRight = new Button(context);
+            btnRight = new TextView(context);
             btnRight.setId(R.id.navi_btn_right);
             
             //右边显示文字
@@ -206,7 +206,7 @@ public class CommNavigation extends RelativeLayout
                 btnRight.setTextSize(rightSize);
                 btnRight.setText(strBtnRight);
                 btnRight.setTextColor(textColor);
-                ViewUtils.setBackground(btnRight, R.drawable.comm_navi_button_bg);
+//                ViewUtils.setBackground(btnRight, R.drawable.comm_navi_button_bg);
             }else
             {
                 //右边显示图片，高度和宽度为定义的宽高

@@ -17,10 +17,8 @@ import android.view.View;
      {
         if(null == convertView)
         {
-            View view = View.inflate(mContext, R.layout.file_item, null);
-            convertView = view.findViewById(R.id.relaGrid);
+            convertView = View.inflate(mContext, R.layout.file_item, null);
         }
-       
          ImageView image = ViewHolder.get(convertView, R.id.fileImg);
          TextView text = ViewHolder.get(convertView, R.id.fileName);
          //....

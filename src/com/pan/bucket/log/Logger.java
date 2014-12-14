@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 import com.pan.bucket.thread.Runtask;
+import com.pan.bucket.thread.RuntaskBackground;
 import com.pan.bucket.thread.ThreadPool;
 import com.pan.bucket.utils.DateUtils;
 
@@ -153,7 +154,7 @@ public class Logger {
 	 */
 	private static void writeLog(String tag, String msg, Throwable tr,
 			String priority) {
-		ThreadPool.go(new Runtask<Void, Void>(tag, msg, tr, priority) {
+		ThreadPool.go(new RuntaskBackground<Void, Void>(tag, msg, tr, priority) {
 			@Override
 			public Void runInBackground() {
 				synchronized (Logger.class) {
