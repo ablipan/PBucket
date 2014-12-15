@@ -102,7 +102,7 @@ public abstract class BaseFragment extends Fragment{
 		}
 		if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
 			startActivity(intent);
-			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
+//			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
 		}
 	}
 
@@ -111,7 +111,7 @@ public abstract class BaseFragment extends Fragment{
 		intent.setAction(action);
 		if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
 			startActivity(intent);
-			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
+//			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
 		}
 	}
 
@@ -123,7 +123,7 @@ public abstract class BaseFragment extends Fragment{
 		}
 		if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
 			startActivity(intent);
-			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
+//			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
 		}
 	}
 	/***************************** Start Activity End*****************************/

@@ -6,7 +6,7 @@
     
     <!-- 文字 -->
     <color name="text_white">@color/white</color>
-    <color name="text_black">@color/grey10</color>
+    <color name="text_black">@color/grey30</color>
     <color name="text_blue">@color/DodgerBlue</color>
     <color name="text_grey">@color/grey40</color>
     <color name="text_green">#11b500</color>
@@ -29,6 +29,7 @@
     <color name="DodgerBlue3">#1874CD</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="grey30">#4D4D4D</color>
     <color name="grey40">#666666</color>
     <color name="grey60">#999999</color>
     <color name="grey70">#B3B3B3</color>

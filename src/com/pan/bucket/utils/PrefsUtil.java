@@ -127,6 +127,12 @@ public class PrefsUtil {
 		editor.putString(key, GSON.toJson(object));
 	}
 
+	/**
+	 * 取出复杂对象
+	 * @param key
+	 * @param a
+	 * @return
+	 */
 	public <T> T getObject(String key, Class<T> a) {
 
 		String gson = prefs.getString(key, null);

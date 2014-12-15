@@ -1,13 +1,13 @@
 
 package com.swipebacklayout.app;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
 import com.swipebacklayout.SwipeBackLayout;
 
-public class SwipeBackActivity extends Activity implements SwipeBackActivityBase {
+public class SwipeBackActivity extends FragmentActivity implements SwipeBackActivityBase {
     private SwipeBackActivityHelper mHelper;
 
     @Override

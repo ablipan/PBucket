@@ -48,6 +48,8 @@ import android.widget.TextView;
  * <p>To use something other than TextViews for the array display, for instance, ImageViews,
  * or to have some of data besides toString() results fill the views,
  * override {@link #getView(int, View, ViewGroup)} to return the type of view you want.
+ * 
+ * 
  */
 public class MyArrayAdapter<T> extends BaseAdapter implements Filterable {
     /**

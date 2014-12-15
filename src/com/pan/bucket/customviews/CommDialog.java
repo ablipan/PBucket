@@ -64,7 +64,7 @@ public class CommDialog
      * @return
      */
     @SuppressLint("InflateParams")
-    public static AlertDialog showInfoDialog(Context context, Integer title , String message,
+    public static AlertDialog showInfoDialog(Context context, String title , String message,
             String btnText, Boolean canceledOnTouchOutside,
             Boolean cancelAble, final OnDialogClickListener dialogClickListener)
     {
@@ -125,9 +125,9 @@ public class CommDialog
         return alertDialog;
     }
     
-    public static AlertDialog showConfirmDialog(Context context,Integer messageId ,final OnDialogClickListener dialogClickListener )
+    public static AlertDialog showConfirmDialog(Context context,String message ,final OnDialogClickListener dialogClickListener )
     {
-        return showConfirmDialog(context, null , messageId, null, null, true, true, dialogClickListener);
+        return showConfirmDialog(context, null , message, null, null, true, true, dialogClickListener);
     }
     
     /**
@@ -153,7 +153,7 @@ public class CommDialog
      * @return
      */
     @SuppressLint("InflateParams")
-    public static AlertDialog showConfirmDialog(Context context,Integer title , Integer message,
+    public static AlertDialog showConfirmDialog(Context context,String title , String message,
             String leftBtnText, String rightBtnText, Boolean canceledOnTouchOutside,
             Boolean cancelAble, final OnDialogClickListener dialogClickListener)
     {

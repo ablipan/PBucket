@@ -1,6 +1,8 @@
 <resources>
     
     <!-- 导航栏返回键ID -->
+    <item name="navi_id" type="id"/>
+    <!-- 导航栏返回键ID -->
     <item name="navi_btn_left" type="id"/>
     <!-- 导航栏返回键外层layoutID -->
     <item name="navi_btn_left_layout" type="id"/>
@@ -8,6 +10,9 @@
     <item name="navi_title" type="id"/>
     <!-- 导航栏右边按钮 -->
     <item name="navi_btn_right" type="id"/>
+     <!-- 导航栏邮编按钮外层layoutID -->
+    <item name="navi_btn_right_layout" type="id"/>
+    
     <!--layou根元素加上这个id，Activity继承CommActivity，点击除输入框周围可以隐藏软键盘-->
     <item name="main_parent" type="id"/>
 </resources>

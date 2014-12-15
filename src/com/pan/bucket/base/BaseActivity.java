@@ -147,10 +147,10 @@ public abstract class BaseActivity extends SwipeBackActivity implements
 	}
 
 	/** 结束Activity **/
-	protected void finishActivityWithAnimation() {
-		super.finish();
-		overridePendingTransition(R.anim.anim_null, R.anim.push_right_out);
-	}
+//	protected void finishActivityWithAnimation() {
+//		super.finish();
+//		overridePendingTransition(R.anim.anim_null, R.anim.push_right_out);
+//	}
 
 	/***************************** Start Activity End *****************************/
 

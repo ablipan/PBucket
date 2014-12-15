@@ -85,6 +85,7 @@
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:dropDownListViewStyle">@style/widget_dropdownlistview</item>
+        <item name="android:windowNoTitle">true</item>
         <!--item name="android:actionBarStyle" tools:ignore="NewApi">@style/AppBaseTheme.ActionBarStyle</item>-->
         <!-- item name="actionBarStyle">@style/AppBaseTheme.ActionBarStyle</item> -->
     </style>
@@ -195,6 +196,7 @@
         <item name="android:textSize">@dimen/text_size_esmall</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:onClick">BtnClick</item>
     </style>
     <!-- 灰色按钮 -->
     <style name="comm_grey_btn_style" parent="comm_btn_style">
@@ -299,5 +301,4 @@
 
     <!-- Checkbox样式 -->
     <style name="Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox"></style>
-
 </resources>

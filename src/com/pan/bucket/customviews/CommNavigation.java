@@ -128,7 +128,6 @@ public class CommNavigation extends RelativeLayout
     @SuppressWarnings("deprecation")
     private void initContent()
     {
-        
         //垂直居中
         setGravity(Gravity.CENTER_VERTICAL);
         LayoutParams naviParams = new LayoutParams(
@@ -186,8 +185,8 @@ public class CommNavigation extends RelativeLayout
             OnRightClickListener rightClickListener = new OnRightClickListener();
             
             btnRightLayout = new RelativeLayout(context);
+            btnRightLayout.setId(R.id.navi_btn_right_layout);
             RelativeLayout.LayoutParams btnRightLayoutParams = new RelativeLayout.LayoutParams(btnRightLayoutWidth , LayoutParams.MATCH_PARENT);
-            
             //相对位置居右
             btnRightLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
             btnRightLayout.setLayoutParams(btnRightLayoutParams);
@@ -248,6 +247,7 @@ public class CommNavigation extends RelativeLayout
             }else
             {
                 ((Activity)context).finish();
+                ((Activity)context).overridePendingTransition(R.anim.anim_null, R.anim.push_right_out);
             }
         }
     }
