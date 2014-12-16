@@ -22,8 +22,8 @@ public class PApplication extends LitePalApplication {
 		super.onCreate();
 		context = getApplicationContext();
 		
-		initImageLoader(); // 图片加载器
 		initLogger(); // 日志记录
+		initImageLoader(); // 图片加载器
 		initHttpUtils(); // http工具类
 		initCrashHandler(); // 初始化程序崩溃捕捉处理
 		initPrefs(); // 初始化SharedPreference

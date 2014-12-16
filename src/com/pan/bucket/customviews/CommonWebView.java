@@ -175,7 +175,7 @@ public class CommonWebView extends WebView {
 				Bitmap favicon) {
 			super.onPageStarted(view, url, favicon);
 			if (!CommLoading.isShowing()) {
-				CommLoading.showWithoutCancel(getContext(),
+				CommLoading.show(getContext(),
 						R.string.loading_text);
 			}
 			try {

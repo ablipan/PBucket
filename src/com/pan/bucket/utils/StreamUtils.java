@@ -5,6 +5,8 @@
  */
 package com.pan.bucket.utils;
 
+import static android.os.Environment.MEDIA_MOUNTED;
+
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -13,7 +15,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Environment;
+
+import com.nostra13.universalimageloader.utils.L;
 
 /**
  * @author : lipan
@@ -24,7 +29,7 @@ import android.os.Environment;
  * @update_desc :
  * 
  */
-public class HttpUtils {
+public class StreamUtils {
 
 	/**
 	 * 执行Ping命令
@@ -98,10 +103,10 @@ public class HttpUtils {
 	 * 
 	 * @return
 	 */
-	public static boolean isSDcardMounted() {
-		return Environment.MEDIA_MOUNTED.equals(Environment
-				.getExternalStorageState());
-	}
+//	public static boolean isSDcardMounted() {
+//		return Environment.MEDIA_MOUNTED.equals(Environment
+//				.getExternalStorageState());
+//	}
 
 	/**
 	 * 在手机目录/SD卡中创建目录
@@ -111,17 +116,18 @@ public class HttpUtils {
 	 *            需要创建的目录
 	 * @return
 	 */
-	public static File mkLocalDir(Context context, String path) {
-		File dir;
-		if (isSDcardMounted()) {
-			dir = new File(Environment.getExternalStorageDirectory()
-					+ File.separator + path); // SDcard
-		} else {
-			dir = new File(context.getFilesDir().getAbsolutePath()
-					+ File.separator + path); // 手机内存
-		}
-		if (!dir.exists())
-			dir.mkdirs();
-		return dir;
-	}
+//	public static File mkLocalDir(Context context, String path) {
+//		File dir;
+//		if (isSDcardMounted()) {
+//			dir = new File(Environment.getExternalStorageDirectory()
+//					+ File.separator + path); // SDcard
+//		} else {
+//			dir = new File(context.getFilesDir().getAbsolutePath()
+//					+ File.separator + path); // 手机内存
+//		}
+//		if (!dir.exists())
+//			dir.mkdirs();
+//		return dir;
+//	}
+	
 }

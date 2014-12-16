@@ -27,7 +27,7 @@ public class ViewHolder {
 	// I added a generic return type to reduce the casting noise in client code
 
 	@SuppressWarnings("unchecked")
-	public <T extends View> T get(View view, int id) {
+	public static <T extends View> T get(View view, int id) {
 
 		SparseArray<View> viewHolder = (SparseArray<View>) view.getTag();
 		if (viewHolder == null) {

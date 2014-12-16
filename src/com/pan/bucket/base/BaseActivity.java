@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -38,12 +39,14 @@ public abstract class BaseActivity extends SwipeBackActivity implements
 	private CommListener listener;
 	protected Context context;
 	protected Activity activity;
-
+	protected LayoutInflater inflater;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		context = this;
 		activity = this;
+		inflater = getLayoutInflater();
 		// 注解
 		AndroidAutowire.loadFieldsFromBundle(savedInstanceState, this,
 				BaseAutowireActivity.class);
@@ -147,11 +150,17 @@ public abstract class BaseActivity extends SwipeBackActivity implements
 	}
 
 	/** 结束Activity **/
-//	protected void finishActivityWithAnimation() {
-//		super.finish();
-//		overridePendingTransition(R.anim.anim_null, R.anim.push_right_out);
-//	}
-
+	protected void finishActivityWithAnimation() {
+		super.finish();
+		overridePendingTransition(R.anim.anim_null, R.anim.push_right_out);
+	}
+	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		/** 由于style中android:windowIsTranslucent=true影响theme中的返回动画....监控返回按钮 **/
+		overridePendingTransition(R.anim.anim_null, R.anim.push_right_out);
+	}
 	/***************************** Start Activity End *****************************/
 
 	/**
@@ -247,4 +256,5 @@ public abstract class BaseActivity extends SwipeBackActivity implements
 			}
 		}
 	}
+	
 }

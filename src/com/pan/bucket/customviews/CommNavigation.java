@@ -247,6 +247,7 @@ public class CommNavigation extends RelativeLayout
             }else
             {
                 ((Activity)context).finish();
+                // 由于android:windowIsTranslucent＝true会影响动画theme...所以重写
                 ((Activity)context).overridePendingTransition(R.anim.anim_null, R.anim.push_right_out);
             }
         }

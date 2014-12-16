@@ -102,7 +102,7 @@ public abstract class BaseFragment extends Fragment{
 		}
 		if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
 			startActivity(intent);
-//			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
+			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
 		}
 	}
 
@@ -111,7 +111,7 @@ public abstract class BaseFragment extends Fragment{
 		intent.setAction(action);
 		if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
 			startActivity(intent);
-//			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
+			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
 		}
 	}
 
@@ -123,9 +123,21 @@ public abstract class BaseFragment extends Fragment{
 		}
 		if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
 			startActivity(intent);
-//			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
+			activity.overridePendingTransition(R.anim.push_left_in, R.anim.anim_null);
 		}
 	}
 	/***************************** Start Activity End*****************************/
+	
+	/***************************** Finish Activity End*****************************/
+	/** 结束Activity **/
+	protected void finish() {
+		activity.finish();
+	}
+	/** 结束Activity **/
+	protected void finishActivityWithAnimation() {
+		activity.finish();
+		activity.overridePendingTransition(R.anim.anim_null, R.anim.push_right_out);
+	}
+	/***************************** Finish Activity End*****************************/
 
 }
